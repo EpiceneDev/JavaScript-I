@@ -54,7 +54,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
 
 
- for (let i = 0; i < arr.length; i++) {
+ for (let i = 0; i < inventory.length; i++) {
      inventory[i]; 
  }
 
@@ -68,12 +68,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-// var car = 0;
-// function car (inventory.id == 33) {
-//     console.log(this.car_year);
-//     console.log(this.car_make);
-//     console.log(this.car_model)
-// }
+// //}
 
 
 // ==== Challenge 2 ====
@@ -95,7 +90,6 @@ let carYears = [];
 // carYears = inventory.sort("car_year")
 // console.log(carYears);
 
-let carYears = []
 for (let i=0; i<inventory.length; i++){
     carYears.push(inventory[i].car_year)
 }
@@ -111,7 +105,7 @@ console.log(oldCars);
 
 // ==== Challenge 5 ====
 // The car lot manager needs to find out how many cars are older than the year 2000. Using the carYears array you just created, find out how many cars were made before the year 2000 by populating the array oldCars and logging it's length.
-let oldCars = [];
+oldCars = [];
 oldCars = inventory.every("car_year")
 console.log(oldCars.length); 
 
